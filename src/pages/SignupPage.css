@@ -1,0 +1,46 @@
+/* body {
+    background-color: #f8f9fa;
+} */
+
+.signup-container {
+    margin-top: 50px;
+}
+
+.form-control:focus {
+    border-color: #ff2f00;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-hover {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-hover:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.signupBg{
+    background: rgba(239, 238, 238, 0.8); /* Transparent background */
+    box-shadow: 
+    3px 3px 6px rgba(0, 0, 0, 0.2),   /* Outer shadow */
+    -3px -3px 6px rgba(255, 255, 255, 0.5) inset; /* Inner shadow */
+    
+}
+.signupBg:hover {
+    transform: translateY(-10px);
+    box-shadow: 
+      0 6px 12px rgba(0, 0, 0, 0.3), 
+      0 15px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+.signupmainBg{
+   
+    background-image: url('https://m.media-amazon.com/images/I/81x-blM+-OL._AC_UF1000,1000_QL80_.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    
+}

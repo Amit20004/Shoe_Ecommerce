@@ -1,0 +1,123 @@
+/* General Page Styling */
+.contact-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+  background-image: url("https://i.pinimg.com/736x/eb/4a/aa/eb4aaa9a05a655b7d806159008ff42c5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-us-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px); /* Glassmorphism effect */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.2), /* Inner glow for depth */
+    0 8px 15px rgba(0, 0, 0, 0.3), /* Outer shadow for 3D effect */
+    inset 0 1px 2px rgba(255, 255, 255, 0.5); /* Soft inner highlight */
+  max-width: 500px;
+  width: 100%;
+  animation: fadeInUp 1s ease-out; /* Apply the animation */
+  transform-style: preserve-3d; /* Enable 3D perspective */
+  transform: translateZ(0); /* Flatten for a sharper appearance */
+}
+
+/* Optional: Add hover effect for more 3D feel */
+.contact-us-card:hover {
+  transform: translateY(-10px); /* Lift the card slightly */
+  box-shadow: 
+    0 6px 8px rgba(0, 0, 0, 0.2), 
+    0 12px 20px rgba(0, 0, 0, 0.3), 
+    inset 0 1px 2px rgba(255, 255, 255, 0.6); /* Adjust shadows on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Form Styling */
+.contact-us-title {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-out; /* Title animation */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.form-group:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.form-group:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.form-group:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.form-group:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.contact-us-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.contact-us-button:hover {
+  background-color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

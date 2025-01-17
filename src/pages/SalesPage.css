@@ -1,0 +1,158 @@
+/* General Page Styling */
+.sale-page-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.sale-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sale-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.sale-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.sale-banner {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.sale-banner h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Sale Products Grid */
+.sale-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Sale Card */
+.sale-banner-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.sale-banner-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sale-card-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* Aspect ratio for image */
+  overflow: hidden;
+}
+
+.sale-card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.sale-banner-card:hover .sale-card-image {
+  transform: scale(1.1);
+}
+
+/* Sale Card Details */
+.sale-card-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.sale-card-details h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.sale-card-details .brand {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.sale-card-details .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.sale-card-details .sale-price {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.sale-card-details .original-price {
+  font-size: 1rem;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+/* Add to Cart Button */
+.btn-add-to-cart {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-add-to-cart:hover {
+  background: #0056b3;
+}
+
+/* No Sale Message */
+.no-sale-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 50px;
+}
+
+/* Scroll Animation */
+.sale-banner-card {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

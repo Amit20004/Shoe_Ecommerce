@@ -1,0 +1,152 @@
+/* General container */
+.about-us-container {
+    font-family: "Arial", sans-serif;
+    color: #2c3e50;
+    padding: 0 20px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Header */
+  .about-us-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    color: white;
+  }
+  
+  .animated-title {
+    font-size: 2.5rem;
+    animation: fadeInDown 1.5s ease-out;
+  }
+  
+  .animated-subtitle {
+    font-size: 1.2rem;
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  /* Sections */
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    gap: 20px;
+  }
+  
+  .about-section .about-text {
+    flex: 1;
+  }
+  
+  .about-section .about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Mission & Vision */
+  .mission-vision {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  
+  .card {
+    background: linear-gradient(135deg, #ffffff, #ecf0f1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Team Section */
+  .team-section {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .team-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .team-card {
+    text-align: center;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .team-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .team-card h4 {
+    margin: 10px 0 5px;
+  }
+  
+  /* Values Section */
+  .values-section {
+    background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .values-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .values-section li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,250 @@
+/* Carousel Styling */
+.carousel-container {
+  margin: 30px auto;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-caption h5 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  color: #ddd;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #007bff;
+}
+
+.carousel-indicators .active {
+  background-color: #0056b3;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* .carousel-container {
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+} */
+
+.carousel-item img {
+  /* height: 500px; */
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-indicators button {
+  background-color: #000;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.carousel-indicators button.active {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0) invert(1);
+}
+
+.carousel-fade .carousel-item {
+  transition: opacity 1.5s ease-in-out;
+}
+
+
+/* Footer Styling */
+
+.footer {
+  font-size: 14px;
+}
+
+.footer h6 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+
+  .cta-btn:hover {
+    background-color:rgb(247, 157, 112);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  /* content section */
+  /* src/components/EcommerceSection.css */
+.ecommerce-section {
+  background-color: #f8f9fa;
+}
+
+.conTitle {
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+}
+
+.conText{
+  font-size: 1.25rem;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.conBtn {
+  background-color: #ffae00;
+}
+
+.conBtn:hover {
+  background-color: #eb942b;
+}
+
+
+/* promotion */
+
+  .promo-btn:hover {
+    background-color: #2e62ca;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+
+  .cart-table {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-item {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .cart-item:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .promo-banner.slide-in-top {
+    animation: slideInTop 1s ease-out;
+  }
+  
+  
+  /* contentSection */
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-section .slide-in-left {
+    animation: slideInLeft 1s ease-out;
+  }
+  
+  .animate-section .slide-in-right {
+    animation: slideInRight 1s ease-out;
+  }
+  
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .cart-table {
+      font-size: 14px;
+    }
+    .cartBtn {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+  }
