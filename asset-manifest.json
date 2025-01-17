@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Shoe_Ecommerce/static/css/main.46a28909.css",
+    "main.js": "/Shoe_Ecommerce/static/js/main.33c2ebca.js",
+    "static/media/c2.jpg": "/Shoe_Ecommerce/static/media/c2.d7c6502e175c08788faf.jpg",
+    "static/media/c1.jpg": "/Shoe_Ecommerce/static/media/c1.eb44317b534ddd5f5600.jpg",
+    "static/media/c3.jpg": "/Shoe_Ecommerce/static/media/c3.ed97eac2acca5a18f1bb.jpg",
+    "index.html": "/Shoe_Ecommerce/index.html",
+    "main.46a28909.css.map": "/Shoe_Ecommerce/static/css/main.46a28909.css.map",
+    "main.33c2ebca.js.map": "/Shoe_Ecommerce/static/js/main.33c2ebca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46a28909.css",
+    "static/js/main.33c2ebca.js"
+  ]
+}
